@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Application</title>
+    <!-- Global stylesheets -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mycss.css" rel="stylesheet">
+    <link href="css/bootstrap-datepicker.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!--Pre Load Form Start-->
+    <!--<div class="preload">
+        <img src="http://i.imgur.com/KUJoe.gif">
+    </div>-->
+    <!--Pre Load Form end-->
+
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="counter-tab" data-bs-toggle="tab" data-bs-target="#counter"
+                type="button" role="tab" aria-controls="counter" aria-selected="true">Counter Lock</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="weather-tab" data-bs-toggle="tab" data-bs-target="#weather" type="button"
+                role="tab" aria-controls="weather" aria-selected="false">Weather</button>
+        </li>
+    </ul>
+    <!-- Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <!-- Tab panes Counter-->
+        <div class="tab-pane fade show active" id="counter" role="tabpanel" aria-labelledby="counter-tab">
+            <div class="container">
+                <div class="row mt-5">
+                    <h1>Counter Lock</h1>
+                    <div class="countdown">
+                        <div class="countdown-el days-c">
+                            <p class="big-text" id="days">0</p>
+                            <span>days</span>
+                        </div>
+                        <div class="countdown-el hours-c">
+                            <p class="big-text" id="hours">0</p>
+                            <span>hours</span>
+                        </div>
+                        <div class="countdown-el mins-c">
+                            <p class="big-text" id="mins">0</p>
+                            <span>mins</span>
+                        </div>
+                        <div class="countdown-el seconds-c">
+                            <p class="big-text" id="seconds">0</p>
+                            <span>seconds</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="block-counter">
+                        <div class="digital-clock">
+                            <div class="time">
+                                <div class="input-group date" data-provide="datepicker">
+                                    <input type="text" class="form-control" id="datepicker">
+                                    <div class="input-group-addon">
+                                        <span class="glyphicon glyphicon-th"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="d-grid gap-2 d-md-block text-center">
+                        <button type="button" class="btn btn-light" id="btnTime">Set Time</button>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="hidden-messages">
+                        <span class="messages" id="messages_error"> </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Tab panes Counter End-->
+
+        <!-- Tab panes Weather-->
+        <div class="tab-pane fade" id="weather" role="tabpanel" aria-labelledby="weather-tab">
+            <h1>Weather Check</h1>
+            <div id="weather_block">
+                <form id="form">
+                    <input type="text" id="search" placeholder="Search by location" autocomplete="off" />
+                </form>
+                <main id="main"></main>
+            </div>
+        </div>
+
+        <!-- Tab panes Weather end-->
+    </div>
+    <!-- Tab panes End-->
+
+
+    <div>
+        <!-- footer start-->
+        <footer class="footer border-top py-4 fixed-bottom">
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="m-0 text-center text-muted">&copy; 2022 datnh</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer start-->
+    </div>
+
+
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/bootstrap.bundle.min.js"></script>
+    <script src="scripts/bootstrap-datepicker.js"></script>
+    <script src="scripts/DateTime.js"></script>
+    <script src="scripts/model.js"></script>
+    <script src="scripts/view.js"></script>
+    <script src="scripts/controller.js"></script>
+
+</body>
+
+</html>

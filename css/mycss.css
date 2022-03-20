@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+
+body{
+    background: #2e2e44;
+}
+
+#myTab{
+    background: #2e2e44;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hidden-messages{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-counter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2e2e44;
+    font-family: 'Poppins', sans-serif;
+}
+
+.digital-clock{
+    position: relative;
+    color: #fff;
+    background: #2d2f41;
+    width: 425px;
+    padding: 20px 45px;
+    box-shadow: 0 5px 25px rgba(14,21,37,0.8);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hour , .dots ,.minutus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    padding: 0 10px;
+    line-height: 125px;
+}
+
+.hour ,.minutus{
+    font-size: 6.5;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-weight: normal;
+    font-size: 4rem;
+    margin-top: 5rem;
+    color: #fff;
+}
+
+.countdown{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #fff;
+}
+
+.big-text{
+    font-weight: bold;
+    font-size: 6rem;
+    line-height: 1;
+    margin: 1rem 2rem;
+}
+
+.countdown-el{
+    text-align: center;
+}
+.countdown-el span{
+    font-size: 1.3rem;
+}
+
+.hidden-messages{
+    color: #fff;
+}
+
+/* Weather Tab */
+#weather_block{
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 15vh;
+}
+
+.weather{
+    font-size: 2rem;
+    text-align: center;
+    color: #fff;
+}
+
+.weather h2{
+    
+    align-items: center;
+    margin-bottom: 0;
+    text-align: center;
+    color: #fff;
+}
